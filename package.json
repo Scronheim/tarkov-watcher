@@ -1,5 +1,5 @@
 {
-  "name": "vue-electron-app",
+  "name": "tarkov-watcher",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,6 +18,7 @@
     "axios": "^0.25.0",
     "core-js": "^3.24.0",
     "electron-store": "^8.0.2",
+    "lodash": "^4.17.21",
     "vue": "^2.7.8",
     "vue-router": "^3.5.4",
     "vue-toastification": "^1.7.14",

@@ -1,0 +1,13 @@
+$body-font-family: 'Share Tech', sans-serif;
+
+.v-application {
+  .v-select__slot,
+  .v-card__title,
+  .v-list-item__title,
+  p,
+  h1,
+  {
+    font-family: $body-font-family !important;
+  }
+}
+@import '~vuetify/src/styles/settings/_variables.scss';
