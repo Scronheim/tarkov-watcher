@@ -1,7 +1,16 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib/framework'
+import { Ripple } from 'vuetify/lib/directives'
 import { VTextField, VBtn, VAutocomplete } from 'vuetify/lib'
-Vue.use(Vuetify)
+
+Vue.use(Vuetify, {
+  directives: {
+    Ripple
+  },
+  icons: {
+    iconfont: 'md', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+  },
+})
 
 // prefix "C" means custom
 Vue.component('CTextField', {

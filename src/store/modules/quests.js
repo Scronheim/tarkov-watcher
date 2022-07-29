@@ -9,15 +9,17 @@ const questsModule = {
     completedQuests: eStore.get('player.completedQuests') || [],
   }),
   mutations: {
+    removeQuestFromCompleted(state, payload) {
+      state.completedQuests.splice(payload.index, 1)
+    },
     removeQuestFromTracking(state, payload) {
       state.trackingQuests.splice(payload.index, 1)
-      eStore.set('player.trackingQuests', state.trackingQuests)
-      state.completedQuests.push(payload.quest)
-      eStore.set('player.completedQuests', state.completedQuests)
+    },
+    markQuestComplete(state, quest) {
+      state.completedQuests.push(quest)
     },
     setTrackingQuests(state, payload) {
       state.trackingQuests = payload
-      eStore.set('player.trackingQuests', state.trackingQuests)
     }
   },
   actions: {},

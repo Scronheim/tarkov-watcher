@@ -3,13 +3,15 @@
     <v-card-title>Debug</v-card-title>
     <v-card-text>
       <v-row>
-        <v-col>
+        <v-col style="overflow-y: scroll; height: 87vh">
+          <p class="text-h5">Отслеживаемые квесты</p>
           <pre>
 {{ trackingQuestsInElectronStore }}
           </pre>
         </v-col>
         <v-divider vertical/>
-        <v-col>
+        <v-col style="overflow-y: scroll; height: 87vh">
+          <p class="text-h5">Выполненые квесты</p>
           <pre>
 {{ completedQuestsInElectronStore }}
           </pre>

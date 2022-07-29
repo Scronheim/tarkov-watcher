@@ -12,11 +12,14 @@
         <div class="mt-8"/>
         <v-img src="/images/logo.png"/>
         <v-list nav dense>
-          <v-list-item>
+          <v-list-item align="center">
             <v-list-item-title class="text-h6">{{ $store.getters.appName }}</v-list-item-title>
           </v-list-item>
           <v-divider class="mb-1"/>
           <v-list-item link to="/">
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
             <v-list-item-title class="text-h6">{{ player.nickname }}</v-list-item-title>
           </v-list-item>
           <v-divider/>
@@ -48,6 +51,12 @@
             </v-list-item-icon>
             <v-list-item-title class="text-h6">Квесты</v-list-item-title>
           </v-list-item>
+          <v-list-item link to="/items">
+            <v-list-item-icon>
+              <v-icon>mdi-clipboard-text</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title class="text-h6">Предметы</v-list-item-title>
+          </v-list-item>
           <v-list-item link to="/debug">
             <v-list-item-icon>
               <v-icon>mdi-bug</v-icon>
@@ -55,6 +64,12 @@
             <v-list-item-title class="text-h6">Debug</v-list-item-title>
           </v-list-item>
         </v-list>
+        <v-divider/>
+        <v-row style="height: 200px">
+          <v-col align-self="end" align="center">
+            Created by Scronheim
+          </v-col>
+        </v-row>
       </v-navigation-drawer>
       <v-main>
         <v-container fluid>

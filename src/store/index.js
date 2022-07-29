@@ -38,6 +38,13 @@ export default new Vuex.Store({
     ],
   },
   mutations: {
+    deletePlayer(state) {
+      state.player = {
+        nickname: undefined,
+        level: 1
+      }
+      eStore.clear()
+    },
     setInitSettings(state, payload) {
       state.player = payload
 

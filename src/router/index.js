@@ -15,6 +15,11 @@ const routes = [
     component: () => import('../views/Quests'),
   },
   {
+    path: '/items',
+    name: 'Items page',
+    component: () => import('../views/Items'),
+  },
+  {
     path: '/debug',
     name: 'Debug page',
     component: () => import('../views/Debug'),

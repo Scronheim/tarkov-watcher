@@ -11201,7 +11201,7 @@
       },
       {
         "type": "убить",
-        "target": "убитьa",
+        "target": "Killa",
         "number": 1,
         "location": 4,
         "id": 464
@@ -11233,7 +11233,8 @@
     "turnin": 5,
     "title": "Booze",
     "locales": {
-      "en": "Booze"
+      "en": "Booze",
+      "ru": "Выпивка"
     },
     "wiki": "https://escapefromtarkov.fandom.com/wiki/Booze",
     "exp": 107000,
@@ -11275,7 +11276,8 @@
     "turnin": 4,
     "title": "The Courier",
     "locales": {
-      "en": "The Courier"
+      "en": "The Courier",
+      "ru": "Курьер"
     },
     "wiki": "https://escapefromtarkov.fandom.com/wiki/The_Courier",
     "exp": 137000,
@@ -11299,7 +11301,7 @@
       {
         "type": "заложить",
         "target": "5a1eaa87fcdbcb001865f75e",
-        "hint": "trash containers gas gtation",
+        "hint": "trash containers gas station",
         "number": 1,
         "location": 1,
         "gps": {
